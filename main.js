@@ -1,6 +1,5 @@
-let answer = prompt('Hello how is goin?')
+let answer1 = prompt('Hello how is goin?')
+let answer2 = prompt('Whats your name?')
+let answer3 = prompt('How old are you?')
 
-
-
-console.log(45);
-console.log(answer);
+console.log(`rows: \n${answer1},\n${answer2},\n${answer3}.`);
