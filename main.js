@@ -1,6 +1,4 @@
-let answer = prompt('Hello how is goin?')
+let userName = prompt ('Hello, what is your name?');
+let answer = prompt (`Hello, ${userName}! How are you?`);
 
-
-
-console.log(45);
-console.log(answer);
+alert(answer);
