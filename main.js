@@ -1,6 +1,6 @@
-let answer = prompt('Hello how is goin?')
+let number = 20;
 
-
-
-console.log(45);
-console.log(answer);
+while (number <= 30) {
+    console.log(number);
+    number += 0.5;
+}
