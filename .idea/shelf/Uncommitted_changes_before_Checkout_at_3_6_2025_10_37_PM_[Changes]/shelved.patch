@@ -1,0 +1,21 @@
+Index: main.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>function removeCharacters(str, arrToDelete) {\r\n    let result = str\r\n        .trim() // remove spaces\r\n        .split('') // to array\r\n        .filter(item => !arrToDelete.includes(item)) // remove items\r\n        .join(''); // to string\r\n    return result;\r\n}\r\n\r\nconsole.log(removeCharacters(\" hello world\", ['l', 'd'])); // \"heo wor\"\r\n\r\n\r\n//'func(\" hello world\", ['l', 'd'])' поверне нам \"heo wor\"\r\n// 1) цикли, повернення рядку\r\n// 2) split replace join
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/main.js b/main.js
+--- a/main.js	(revision 7afbea823b73cf285f17135a3f834eaec4f89fbd)
++++ b/main.js	(date 1741109593855)
+@@ -1,10 +1,4 @@
+ function removeCharacters(str, arrToDelete) {
+-    let result = str
+-        .trim() // remove spaces
+-        .split('') // to array
+-        .filter(item => !arrToDelete.includes(item)) // remove items
+-        .join(''); // to string
+-    return result;
+ }
+ 
+ console.log(removeCharacters(" hello world", ['l', 'd'])); // "heo wor"
