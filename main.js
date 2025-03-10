@@ -1,6 +1,16 @@
-function name(a) {
-    return function (b) {
-        return a * b;
+function processUserInputs(){
+   let userInput;
+
+    for (let i = 0; i < 10; i++) {
+        userInput = Number(prompt("Enter number more than 100."));
+        if (userInput > 100){
+                console.log (userInput);
+                return;
+            }
+            else {
+                alert ("Please, enter correct number.");
+            }
     }
+    console.log(userInput);
 }
-console.log(name(5)(2));
+processUserInputs();
