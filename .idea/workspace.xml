@@ -21,6 +21,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="homework6.3" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProblemsViewState">
@@ -68,6 +73,7 @@
       <updated>1739464026568</updated>
       <workItem from="1739464027617" duration="2154000" />
       <workItem from="1739899184433" duration="5891000" />
+      <workItem from="1741614610407" duration="4234000" />
     </task>
     <servers />
   </component>
