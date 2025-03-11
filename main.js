@@ -1,6 +1,13 @@
-function name(a) {
-    return function (b) {
-        return a * b;
-    }
+function sum(a) {
+        this.totalsum = (this.totalsum === undefined ? 0 : this.totalsum);
+        this.totalsum = a + this.totalsum;
+        return this.totalsum;
 }
-console.log(name(5)(2));
+
+console.log(sum(4)); // 4
+
+console.log(sum(6)); // 10
+
+console.log(sum(10)); // 20
+
+console.log(sum(7)); // 27
