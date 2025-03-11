@@ -1,13 +1,16 @@
-function sum(a) {
-        this.totalsum = (this.totalsum === undefined ? 0 : this.totalsum);
-        this.totalsum = a + this.totalsum;
-        return this.totalsum;
-}
+let ladder = {
+        step: 0,
+        up: function () { // підніматиме вас на одну сходинку
+                this.step = this.step + 1;
+                return this;
+        },
+        down: function () { // опускатиме вас на одну сходинку
+                this.step = this.step - 1;
+                return this;
+        },
+        showStep: function () { // показує поточну сходинку
+                console.log(this.step);
+        }
+};
 
-console.log(sum(4)); // 4
-
-console.log(sum(6)); // 10
-
-console.log(sum(10)); // 20
-
-console.log(sum(7)); // 27
+ladder.up().up().down().showStep(); // 1
