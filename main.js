@@ -1,16 +1,5 @@
-let ladder = {
-        step: 0,
-        up: function () { // підніматиме вас на одну сходинку
-                this.step = this.step + 1;
-                return this;
-        },
-        down: function () { // опускатиме вас на одну сходинку
-                this.step = this.step - 1;
-                return this;
-        },
-        showStep: function () { // показує поточну сходинку
-                console.log(this.step);
-        }
-};
+const inputNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-ladder.up().up().down().showStep(); // 1
+const resultNumbers = inputNumbers.filter(num => num % 2 === 0);
+
+console.log(resultNumbers); // виводимо парні числа
