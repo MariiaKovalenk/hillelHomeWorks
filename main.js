@@ -1,16 +1,24 @@
-let ladder = {
-        step: 0,
-        up: function () { // підніматиме вас на одну сходинку
-                this.step = this.step + 1;
-                return this;
-        },
-        down: function () { // опускатиме вас на одну сходинку
-                this.step = this.step - 1;
-                return this;
-        },
-        showStep: function () { // показує поточну сходинку
-                console.log(this.step);
-        }
-};
+const phoneBook = {
+    contacts: [
+        {name:'Alice', phone: '+3806549593', email: 'alise@fgs.com'},
+        {name:'Bob', phone: '+3806549544', email: 'bob@fgs.com'},
+        {name:'Bob', phone: '+3806549544', email: 'bob123@fgs.com'}],
+    getContactInfo(name) {
+        return this.contacts.find((element) => {
+            return name === element.name;
+        });
+        // this.contacts.filter((element) => {
+        //     return name === element.name;
+        // });
+    },
+    addContact(name, phone, email){
+        this.contacts.push({name: name, phone: phone, email: email });
+        // this.contacts.push({ name, phone, email });
+    }
+}
 
-ladder.up().up().down().showStep(); // 1
+
+
+
+phoneBook.addContact("Anna", "+380965556868", "jsfa@gm.com");
+phoneBook.getContactInfo("Bob");
