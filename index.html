@@ -3,9 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        .image-controller {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .image-wrapper {
+            max-height: 150px;
+            height: 150px;
+        }
+        #image-random {
+            height: inherit;
+        }
+
+
+        #button-random-image {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
 </head>
 <body>
-<button>Click me!</button>
+<div>
+    <div class="image-controller" style="display: flex;">
+        <div class="image-wrapper">
+            <img id="image-random" src="" alt="random image that appears after first click">
+        </div>
+        <button id="button-random-image">Click me!</button>
+    </div>
+</div>
 
 
 <script src="main.js"></script>
