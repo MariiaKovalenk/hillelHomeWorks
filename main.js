@@ -1,12 +1,7 @@
-const arr = [1, 3, 4, 6, 2, 5, 7];
-
-function removeElement(array, item) {
-    for (let i = 0; i < array.length; i++) {
-        if (item === array[i]) {
-            array.splice(i, 1);
-            break;
-        }
-    }
-}
-removeElement(arr, 4);
-console.log(arr);
+document.getElementById('button-change-color').addEventListener('click', ((arguments) => {
+    const { colorToChange } = arguments;
+    const textElement = document.getElementById('text-element');
+    const textElementColor = textElement.style.color;
+    textElement.style.color = textElementColor === colorToChange ? this.previousColor : colorToChange;
+    this.previousColor = textElementColor;
+}).bind(null, {colorToChange: 'yellow'}));
