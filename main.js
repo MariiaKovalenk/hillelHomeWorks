@@ -4,4 +4,4 @@ document.getElementById('button-change-color').addEventListener('click', ((argum
     const textElementColor = textElement.style.color;
     textElement.style.color = textElementColor === colorToChange ? this.previousColor : colorToChange;
     this.previousColor = textElementColor;
-}).bind(null, {colorToChange: 'yellow'}));
+}).bind({}, {colorToChange: 'yellow'}));
