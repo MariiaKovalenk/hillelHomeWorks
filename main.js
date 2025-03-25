@@ -1,16 +1,17 @@
-let ladder = {
-        step: 0,
-        up: function () { // підніматиме вас на одну сходинку
-                this.step = this.step + 1;
-                return this;
-        },
-        down: function () { // опускатиме вас на одну сходинку
-                this.step = this.step - 1;
-                return this;
-        },
-        showStep: function () { // показує поточну сходинку
-                console.log(this.step);
+let company = {
+        sales: [{name: 'John', salary: 1000}, {name: 'Alice', salary: 600}],
+        development: {
+                web: [{name: 'Peter', salary: 2000}, {name: 'Alex', salary: 1800}],
+                internals: [{name: 'Jack', salary: 1300}]
         }
 };
 
-ladder.up().up().down().showStep(); // 1
+function sumSalaries(department){
+        if (Array.isArray(department)){
+                return department.reduce((sum, employee) => sum + employee.salary, 0);
+        }else {
+               return Object.values(department).reduce((sum, subDept) => sum + sumSalaries(subDept), 0);
+        }
+}
+
+console.log(sumSalaries(company));
