@@ -1,12 +1,16 @@
-const arr = [1, 3, 4, 6, 2, 5, 7];
+let userLink = '';
 
-function removeElement(array, item) {
-    for (let i = 0; i < array.length; i++) {
-        if (item === array[i]) {
-            array.splice(i, 1);
-            break;
-        }
+function askLink() {
+    const link = prompt("Введіть посилання");
+    if(link){
+        userLink = link;
+        alert("Посилання збережено")
     }
 }
-removeElement(arr, 4);
-console.log(arr);
+function followLink() {
+    if(userLink){
+        window.location.href = userLink;}
+    else {
+        alert("Введіть посилання!");
+    }
+}
