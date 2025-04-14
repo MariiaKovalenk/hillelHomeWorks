@@ -1,30 +1,20 @@
-class Calculator {
-    add(a, b) {
-        return a + b;
+class Coach {
+    constructor(name, specialization, rating) {
+        this.name = name;
+        this.specialization = specialization;
+        this.rating = rating;
     }
 
-    subtract(a, b) {
-        return a - b;
-    }
-
-    multiply(a, b) {
-        return a * b;
-    }
-
-    divide(a, b){
-        if (a===0 || b===0) {
-            return "Error: divided by zero!";
-        }
-        return a / b;
+    displayInfo() {
+        console.log(`Coach: ${this.name}, Specialization: ${this.specialization}, Rating: ${this.rating}`);
     }
 }
+const coach1 = new Coach('John Doe', 'Fitness', 4.7);
 
-const calc = new Calculator();
+const coach2 = new Coach('Alice Smith', 'Yoga', 4.9);
 
-console.log(calc.add(5, 3)); // 8
+coach1.displayInfo(); // "Coach: John Doe, Specialization: Fitness, Rating: 4.7"
 
-console.log(calc.subtract(10, 4)); // 6
+coach2.displayInfo(); // "Coach: Alice Smith, Specialization: Yoga, Rating: 4.9"
 
-console.log(calc.multiply(3, 6)); // 18
 
-console.log(calc.divide(8, 2)); // 4
