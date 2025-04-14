@@ -1,72 +1,30 @@
-const tasksList = document.querySelector("#tasks-list");
-const addNewInput = document.querySelector("#new-task");
-const addNewBtn = document.querySelector("#add-new");
-
-window.onload = function () {
-    tasksList.innerHTML = "";
-    const savedTasks = JSON.parse(localStorage.getItem("tasks")) || [];
-    savedTasks.forEach(task => {
-        renderTask(task.text, task.completed);
-    });
-};
-
-addNewBtn.addEventListener("click", () => {
-    const task = addNewInput.value.trim();
-    if (task) {
-        renderTask(task, false);
-        saveTasks();
-        addNewInput.value = "";
-    }
-});
-
-tasksList.addEventListener("click", (e) => {
-    if (e.target.classList.contains("delete-button")) {
-        e.target.parentElement.remove();
-        saveTasks();
-    }
-});
-
-tasksList.addEventListener("change", (e) => {
-    if (e.target.type === "checkbox") {
-        const span = e.target.nextSibling;
-        if (span) span.classList.toggle("completed", e.target.checked);
-        saveTasks();
-    }
-});
-
-function renderTask(text, completed) {
-    const li = document.createElement("li");
-
-    const checkbox = document.createElement("input");
-    checkbox.type = "checkbox";
-    checkbox.checked = completed;
-
-    const span = document.createElement("span");
-    span.textContent = text;
-    if (completed) {
-        span.classList.add("completed");
+class Calculator {
+    add(a, b) {
+        return a + b;
     }
 
-    const deleteBtn = document.createElement("button");
-    deleteBtn.textContent = "Видалити";
-    deleteBtn.classList.add("delete-button");
+    subtract(a, b) {
+        return a - b;
+    }
 
-    li.appendChild(checkbox);
-    li.appendChild(span);
-    li.appendChild(deleteBtn);
+    multiply(a, b) {
+        return a * b;
+    }
 
-    tasksList.appendChild(li);
+    divide(a, b){
+        if (a===0 || b===0) {
+            return "Error: divided by zero!";
+        }
+        return a / b;
+    }
 }
 
-function saveTasks() {
-    const tasks = [];
-    tasksList.querySelectorAll("li").forEach(li => {
-        const checkbox = li.querySelector("input[type='checkbox']");
-        const span = li.querySelector("span");
-        tasks.push({
-            text: span.textContent,
-            completed: checkbox.checked
-        });
-    });
-    localStorage.setItem("tasks", JSON.stringify(tasks));
-}
+const calc = new Calculator();
+
+console.log(calc.add(5, 3)); // 8
+
+console.log(calc.subtract(10, 4)); // 6
+
+console.log(calc.multiply(3, 6)); // 18
+
+console.log(calc.divide(8, 2)); // 4
