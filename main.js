@@ -1,20 +1,53 @@
-class Coach {
-    constructor(name, specialization, rating) {
-        this.name = name;
-        this.specialization = specialization;
-        this.rating = rating;
+class BankAccount {
+        balance = 0;
+        _accountNumber;
+
+        constructor(ownerName, initialBalance = 0) {
+            this.ownerName = ownerName;
+            this._accountNumber = BankAccount.#generateAccountNumber();
+            this.balance = initialBalance;
+        }
+
+        getBalance() {
+            return this.balance;
+        }
+
+        deposit(amount) {
+            if(amount <= 0) {
+                return;
+            }
+            this.balance += amount;
+            this.#logTransaction(`Deposited ${amount}`);
+        }
+
+    withdraw(amount) {
+        if(amount <= 0 || amount > this.balance) {
+            return;
+        }
+        this.balance -= amount;
+        this.#logTransaction(`Withdraw ${amount}`);
     }
 
-    displayInfo() {
-        console.log(`Coach: ${this.name}, Specialization: ${this.specialization}, Rating: ${this.rating}`);
+    #logTransaction(message) {
+            console.log(`[Account #${this._accountNumber} - ${this.ownerName}: ${message}]`);
+    }
+
+    static #nextAccountNumber = 1;
+    static #generateAccountNumber() {
+            return this.#nextAccountNumber++;
     }
 }
-const coach1 = new Coach('John Doe', 'Fitness', 4.7);
 
-const coach2 = new Coach('Alice Smith', 'Yoga', 4.9);
+const account1 = new BankAccount("Alex Fill",1000);
 
-coach1.displayInfo(); // "Coach: John Doe, Specialization: Fitness, Rating: 4.7"
+console.log(account1.getBalance()); // 1000
 
-coach2.displayInfo(); // "Coach: Alice Smith, Specialization: Yoga, Rating: 4.9"
+account1.deposit(500);
+
+console.log(account1.getBalance()); // 1500
+
+account1.withdraw(200);
+
+console.log(account1.getBalance()); // 1300
 
 
