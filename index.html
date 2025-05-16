@@ -2,12 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Таймер відліку</title>
+    <title>Weather</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<h1>Таймер відліку</h1>
-<div id="timer">01:25</div>
+<div id="weather">
+    <div class="date" id="date"></div>
+    <div class="time" id="time"></div>
+    <img id="icon" class="icon" src="" alt="">
+    <div class="temp" id="temp"></div>
+    <div class="desc" id="description"></div>
+    <div class="details" id="feels_like"></div>
+    <div class="details" id="humidity"></div>
+    <div class="details" id="pressure"></div>
+    <div class="details" id="wind"></div>
+    <button onclick="getWeather()">update</button>
+</div>
 <script src="main.js"></script>
 </body>
 </html>
