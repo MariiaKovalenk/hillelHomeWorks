@@ -1,1 +1,0 @@
-(()=>{"use strict";document.addEventListener("DOMContentLoaded",function(){var e=document.getElementById("new-task"),t=document.getElementById("add-btn"),n=document.getElementById("task-list");t.addEventListener("click",function(){var t=e.value.trim();if(t){var d=document.createElement("li");d.textContent=t,n.appendChild(d),e.value=""}})})})();

@@ -5,18 +5,523 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c387d154-d0c7-4f77-a426-8aadc15d7301" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.babelrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/FrontendPro.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FrontendPro.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ToDo-app/client/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ToDo-app/client/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ToDo-app/client/styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ToDo-app/server/models/Todo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ToDo-app/server/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.babelrc" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/babel" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/babel-external-helpers" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/babel-external-helpers.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/babel-external-helpers.ps1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/babel.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.bin/babel.ps1" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/node_modules/.package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/cli/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/cli/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/cli/bin/babel-external-helpers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/cli/bin/babel-external-helpers.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/cli/bin/babel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/cli/bin/babel.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/cli/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/cli/lib/babel-external-helpers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/cli/lib/babel-external-helpers.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/cli/lib/babel/dir.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/cli/lib/babel/dir.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/cli/lib/babel/file.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/cli/lib/babel/file.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/cli/lib/babel/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/cli/lib/babel/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/cli/lib/babel/options.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/cli/lib/babel/options.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/cli/lib/babel/util.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/cli/lib/babel/util.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/cli/lib/babel/watcher.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/cli/lib/babel/watcher.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/cli/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-annotate-as-pure/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-annotate-as-pure/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-annotate-as-pure/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-annotate-as-pure/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-annotate-as-pure/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-create-class-features-plugin/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-create-class-features-plugin/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-create-class-features-plugin/lib/decorators-2018-09.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-create-class-features-plugin/lib/decorators-2018-09.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-create-class-features-plugin/lib/decorators.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-create-class-features-plugin/lib/decorators.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-create-class-features-plugin/lib/features.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-create-class-features-plugin/lib/features.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-create-class-features-plugin/lib/fields.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-create-class-features-plugin/lib/fields.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-create-class-features-plugin/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-create-class-features-plugin/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-create-class-features-plugin/lib/misc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-create-class-features-plugin/lib/misc.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-create-class-features-plugin/lib/typescript.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-create-class-features-plugin/lib/typescript.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-create-class-features-plugin/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-create-regexp-features-plugin/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-create-regexp-features-plugin/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-create-regexp-features-plugin/lib/features.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-create-regexp-features-plugin/lib/features.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-create-regexp-features-plugin/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-create-regexp-features-plugin/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-create-regexp-features-plugin/lib/util.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-create-regexp-features-plugin/lib/util.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-create-regexp-features-plugin/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-member-expression-to-functions/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-member-expression-to-functions/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-member-expression-to-functions/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-member-expression-to-functions/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-member-expression-to-functions/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-optimise-call-expression/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-optimise-call-expression/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-optimise-call-expression/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-optimise-call-expression/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-optimise-call-expression/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-remap-async-to-generator/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-remap-async-to-generator/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-remap-async-to-generator/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-remap-async-to-generator/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-remap-async-to-generator/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-replace-supers/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-replace-supers/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-replace-supers/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-replace-supers/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-replace-supers/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-skip-transparent-expression-wrappers/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-skip-transparent-expression-wrappers/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-skip-transparent-expression-wrappers/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-skip-transparent-expression-wrappers/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-skip-transparent-expression-wrappers/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-wrap-function/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-wrap-function/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-wrap-function/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-wrap-function/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/helper-wrap-function/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-bugfix-firefox-class-in-computed-class-key/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-bugfix-firefox-class-in-computed-class-key/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-bugfix-firefox-class-in-computed-class-key/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-bugfix-firefox-class-in-computed-class-key/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-bugfix-firefox-class-in-computed-class-key/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-bugfix-safari-class-field-initializer-scope/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-bugfix-safari-class-field-initializer-scope/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-bugfix-safari-class-field-initializer-scope/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-bugfix-safari-class-field-initializer-scope/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-bugfix-safari-class-field-initializer-scope/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-bugfix-safari-id-destructuring-collision-in-function-expression/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-bugfix-safari-id-destructuring-collision-in-function-expression/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-bugfix-safari-id-destructuring-collision-in-function-expression/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-bugfix-safari-id-destructuring-collision-in-function-expression/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-bugfix-safari-id-destructuring-collision-in-function-expression/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-bugfix-v8-spread-parameters-in-optional-chaining/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-bugfix-v8-spread-parameters-in-optional-chaining/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-bugfix-v8-spread-parameters-in-optional-chaining/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-bugfix-v8-spread-parameters-in-optional-chaining/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-bugfix-v8-spread-parameters-in-optional-chaining/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-bugfix-v8-static-class-fields-redefine-readonly/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-bugfix-v8-static-class-fields-redefine-readonly/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-bugfix-v8-static-class-fields-redefine-readonly/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-bugfix-v8-static-class-fields-redefine-readonly/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-bugfix-v8-static-class-fields-redefine-readonly/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-proposal-private-property-in-object/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-proposal-private-property-in-object/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-proposal-private-property-in-object/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-proposal-private-property-in-object/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-proposal-private-property-in-object/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-syntax-import-assertions/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-syntax-import-assertions/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-syntax-import-assertions/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-syntax-import-assertions/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-syntax-import-assertions/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-syntax-import-attributes/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-syntax-import-attributes/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-syntax-import-attributes/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-syntax-import-attributes/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-syntax-import-attributes/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-syntax-unicode-sets-regex/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-syntax-unicode-sets-regex/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-syntax-unicode-sets-regex/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-syntax-unicode-sets-regex/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-arrow-functions/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-arrow-functions/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-arrow-functions/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-arrow-functions/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-arrow-functions/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-async-generator-functions/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-async-generator-functions/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-async-generator-functions/lib/for-await.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-async-generator-functions/lib/for-await.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-async-generator-functions/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-async-generator-functions/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-async-generator-functions/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-async-to-generator/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-async-to-generator/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-async-to-generator/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-async-to-generator/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-async-to-generator/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-block-scoped-functions/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-block-scoped-functions/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-block-scoped-functions/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-block-scoped-functions/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-block-scoped-functions/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-block-scoping/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-block-scoping/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-block-scoping/lib/annex-B_3_3.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-block-scoping/lib/annex-B_3_3.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-block-scoping/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-block-scoping/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-block-scoping/lib/loop.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-block-scoping/lib/loop.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-block-scoping/lib/validation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-block-scoping/lib/validation.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-block-scoping/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-class-properties/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-class-properties/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-class-properties/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-class-properties/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-class-properties/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-class-static-block/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-class-static-block/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-class-static-block/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-class-static-block/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-class-static-block/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-classes/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-classes/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-classes/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-classes/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-classes/lib/inline-callSuper-helpers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-classes/lib/inline-callSuper-helpers.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-classes/lib/transformClass.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-classes/lib/transformClass.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-classes/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-computed-properties/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-computed-properties/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-computed-properties/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-computed-properties/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-computed-properties/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-destructuring/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-destructuring/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-destructuring/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-destructuring/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-destructuring/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-dotall-regex/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-dotall-regex/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-dotall-regex/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-dotall-regex/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-dotall-regex/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-duplicate-keys/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-duplicate-keys/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-duplicate-keys/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-duplicate-keys/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-duplicate-keys/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-duplicate-named-capturing-groups-regex/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-duplicate-named-capturing-groups-regex/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-duplicate-named-capturing-groups-regex/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-duplicate-named-capturing-groups-regex/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-duplicate-named-capturing-groups-regex/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-dynamic-import/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-dynamic-import/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-dynamic-import/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-dynamic-import/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-dynamic-import/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-explicit-resource-management/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-explicit-resource-management/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-explicit-resource-management/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-explicit-resource-management/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-explicit-resource-management/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-exponentiation-operator/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-exponentiation-operator/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-exponentiation-operator/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-exponentiation-operator/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-exponentiation-operator/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-export-namespace-from/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-export-namespace-from/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-export-namespace-from/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-export-namespace-from/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-export-namespace-from/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-for-of/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-for-of/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-for-of/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-for-of/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-for-of/lib/no-helper-implementation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-for-of/lib/no-helper-implementation.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-for-of/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-function-name/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-function-name/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-function-name/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-function-name/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-function-name/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-json-strings/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-json-strings/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-json-strings/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-json-strings/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-json-strings/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-literals/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-literals/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-literals/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-literals/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-literals/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-logical-assignment-operators/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-logical-assignment-operators/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-logical-assignment-operators/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-logical-assignment-operators/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-logical-assignment-operators/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-member-expression-literals/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-member-expression-literals/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-member-expression-literals/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-member-expression-literals/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-member-expression-literals/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-modules-amd/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-modules-amd/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-modules-amd/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-modules-amd/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-modules-amd/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-modules-commonjs/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-modules-commonjs/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-modules-commonjs/lib/dynamic-import.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-modules-commonjs/lib/dynamic-import.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-modules-commonjs/lib/hooks.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-modules-commonjs/lib/hooks.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-modules-commonjs/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-modules-commonjs/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-modules-commonjs/lib/lazy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-modules-commonjs/lib/lazy.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-modules-commonjs/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-modules-systemjs/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-modules-systemjs/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-modules-systemjs/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-modules-systemjs/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-modules-systemjs/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-modules-umd/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-modules-umd/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-modules-umd/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-modules-umd/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-modules-umd/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-named-capturing-groups-regex/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-named-capturing-groups-regex/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-named-capturing-groups-regex/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-named-capturing-groups-regex/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-named-capturing-groups-regex/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-new-target/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-new-target/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-new-target/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-new-target/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-new-target/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-nullish-coalescing-operator/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-nullish-coalescing-operator/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-nullish-coalescing-operator/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-nullish-coalescing-operator/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-nullish-coalescing-operator/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-numeric-separator/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-numeric-separator/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-numeric-separator/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-numeric-separator/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-numeric-separator/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-object-rest-spread/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-object-rest-spread/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-object-rest-spread/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-object-rest-spread/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-object-rest-spread/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-object-super/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-object-super/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-object-super/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-object-super/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-object-super/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-optional-catch-binding/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-optional-catch-binding/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-optional-catch-binding/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-optional-catch-binding/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-optional-catch-binding/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-optional-chaining/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-optional-chaining/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-optional-chaining/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-optional-chaining/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-optional-chaining/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-parameters/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-parameters/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-parameters/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-parameters/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-parameters/lib/params.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-parameters/lib/params.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-parameters/lib/rest.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-parameters/lib/rest.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-parameters/lib/shadow-utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-parameters/lib/shadow-utils.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-parameters/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-private-methods/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-private-methods/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-private-methods/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-private-methods/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-private-methods/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-private-property-in-object/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-private-property-in-object/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-private-property-in-object/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-private-property-in-object/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-private-property-in-object/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-property-literals/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-property-literals/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-property-literals/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-property-literals/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-property-literals/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-regenerator/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-regenerator/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-regenerator/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-regenerator/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-regenerator/lib/regenerator/emit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-regenerator/lib/regenerator/emit.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-regenerator/lib/regenerator/hoist.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-regenerator/lib/regenerator/hoist.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-regenerator/lib/regenerator/leap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-regenerator/lib/regenerator/leap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-regenerator/lib/regenerator/meta.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-regenerator/lib/regenerator/meta.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-regenerator/lib/regenerator/replaceShorthandObjectMethod.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-regenerator/lib/regenerator/replaceShorthandObjectMethod.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-regenerator/lib/regenerator/util.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-regenerator/lib/regenerator/util.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-regenerator/lib/regenerator/visit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-regenerator/lib/regenerator/visit.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-regenerator/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-regexp-modifiers/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-regexp-modifiers/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-regexp-modifiers/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-regexp-modifiers/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-regexp-modifiers/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-reserved-words/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-reserved-words/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-reserved-words/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-reserved-words/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-reserved-words/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-shorthand-properties/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-shorthand-properties/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-shorthand-properties/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-shorthand-properties/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-shorthand-properties/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-spread/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-spread/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-spread/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-spread/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-spread/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-sticky-regex/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-sticky-regex/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-sticky-regex/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-sticky-regex/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-sticky-regex/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-template-literals/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-template-literals/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-template-literals/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-template-literals/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-template-literals/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-typeof-symbol/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-typeof-symbol/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-typeof-symbol/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-typeof-symbol/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-typeof-symbol/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-unicode-escapes/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-unicode-escapes/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-unicode-escapes/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-unicode-escapes/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-unicode-escapes/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-unicode-property-regex/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-unicode-property-regex/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-unicode-property-regex/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-unicode-property-regex/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-unicode-property-regex/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-unicode-regex/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-unicode-regex/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-unicode-regex/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-unicode-regex/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-unicode-regex/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-unicode-sets-regex/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-unicode-sets-regex/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-unicode-sets-regex/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-unicode-sets-regex/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/plugin-transform-unicode-sets-regex/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-env/CONTRIBUTING.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-env/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-env/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-env/data/built-in-modules.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-env/data/built-in-modules.json.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-env/data/built-ins.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-env/data/built-ins.json.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-env/data/core-js-compat.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-env/data/corejs2-built-ins.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-env/data/corejs2-built-ins.json.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-env/data/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-env/data/plugins.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-env/data/plugins.json.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-env/data/shipped-proposals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-env/data/unreleased-labels.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-env/lib/available-plugins.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-env/lib/available-plugins.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-env/lib/debug.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-env/lib/debug.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-env/lib/filter-items.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-env/lib/filter-items.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-env/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-env/lib/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-env/lib/module-transformations.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-env/lib/module-transformations.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-env/lib/normalize-options.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-env/lib/normalize-options.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-env/lib/options.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-env/lib/options.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-env/lib/plugins-compat-data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-env/lib/plugins-compat-data.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-env/lib/polyfills/babel-7-plugins.cjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-env/lib/polyfills/babel-7-plugins.cjs.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-env/lib/polyfills/babel-polyfill.cjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-env/lib/polyfills/babel-polyfill.cjs.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-env/lib/polyfills/regenerator.cjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-env/lib/polyfills/regenerator.cjs.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-env/lib/polyfills/utils.cjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-env/lib/polyfills/utils.cjs.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-env/lib/shipped-proposals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-env/lib/shipped-proposals.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-env/lib/targets-parser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-env/lib/targets-parser.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-env/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-modules/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-modules/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-modules/lib/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-modules/lib/plugins/transform-async-arrows-in-class/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-modules/lib/plugins/transform-edge-default-parameters/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-modules/lib/plugins/transform-edge-function-name/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-modules/lib/plugins/transform-jsx-spread/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-modules/lib/plugins/transform-safari-block-shadowing/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-modules/lib/plugins/transform-safari-for-shadowing/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-modules/lib/plugins/transform-tagged-template-caching/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-modules/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-modules/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-modules/src/plugins/transform-async-arrows-in-class/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-modules/src/plugins/transform-edge-default-parameters/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-modules/src/plugins/transform-edge-function-name/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-modules/src/plugins/transform-jsx-spread/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-modules/src/plugins/transform-safari-block-shadowing/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-modules/src/plugins/transform-safari-for-shadowing/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@babel/preset-modules/src/plugins/transform-tagged-template-caching/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@nicolo-ribaudo/chokidar-2/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@nicolo-ribaudo/chokidar-2/build-chokidar.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@nicolo-ribaudo/chokidar-2/dist/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@nicolo-ribaudo/chokidar-2/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@nicolo-ribaudo/chokidar-2/types.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/.idea/react.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/react/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,9 +531,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -52,24 +557,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;homework22.1&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "homework23.1",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2024.3.2.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\projects\Desktop\FrontendPro\ToDo-app\server\models" />
+      <recent name="C:\projects\Desktop\FrontendPro\ToDo-app\client" />
+      <recent name="C:\projects\Desktop\FrontendPro\ToDo-app\server" />
       <recent name="C:\projects\Desktop\FrontendPro\src" />
       <recent name="C:\projects\Desktop\FrontendPro\dist" />
     </key>
@@ -95,7 +604,9 @@
       <workItem from="1744646850997" duration="9318000" />
       <workItem from="1751267891180" duration="10573000" />
       <workItem from="1751528465356" duration="1902000" />
-      <workItem from="1751624221999" duration="1275000" />
+      <workItem from="1751624221999" duration="3694000" />
+      <workItem from="1751628980705" duration="2031000" />
+      <workItem from="1751631178738" duration="5769000" />
     </task>
     <servers />
   </component>
