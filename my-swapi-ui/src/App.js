@@ -1,6 +1,6 @@
 import React from 'react';
-import Navbar from '../components/Navbar';
-import PeopleList from '../components/PeopleList';
+import Navbar from './components/Navbar';
+import PeopleList from './components/PeopleList';
 import './App.css';
 
 function App() {
