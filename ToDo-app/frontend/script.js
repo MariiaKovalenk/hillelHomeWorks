@@ -1,0 +1,6 @@
+const API_URL = 'http://localhost:3000/todos';
+document.getElementById('todoForm').onsubmit = e => { e.preventDefault(); fetch(API_URL, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ title: document.getElementById('todoInput').value }) }).then(() => fetchTodos()); document.getElementById('todoInput').value = ''; };
+async function fetchTodos() { const res = await fetch(API_URL); document.getElementById('todoList').innerHTML = (await res.json()).map(todo => `<li>${todo.title}<button onclick="toggleTodo('${todo._id}')">${todo.completed ? 'Undo' : 'Complete'}</button><button onclick="deleteTodo('${todo._id}')">Delete</button></li>`).join(''); }
+async function toggleTodo(id) { const todo = await (await fetch(`${API_URL}/${id}`)).json(); await fetch(`${API_URL}/${id}`, { method: 'PUT', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ completed: !todo.completed }) }); fetchTodos(); }
+async function deleteTodo(id) { await fetch(`${API_URL}/${id}`, { method: 'DELETE' }); fetchTodos(); }
+document.addEventListener('DOMContentLoaded', fetchTodos);
